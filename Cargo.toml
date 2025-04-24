@@ -29,7 +29,6 @@ optional = true
 [dependencies.ffmpeg-sys-the-third]
 git = "https://github.com/kore-signet/ffmpeg-the-third.git"
 default-features = false
-path = "ffmpeg-sys-the-third"
 
 [dependencies.serde]
 version = "1.0.152"
