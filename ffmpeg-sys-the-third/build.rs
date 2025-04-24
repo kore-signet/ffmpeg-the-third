@@ -549,6 +549,9 @@ fn build(out_dir: &Path, ffmpeg_version: &str) -> io::Result<PathBuf> {
     // do not build programs since we don't need them
     configure.arg("--disable-programs");
 
+    // disable documentation build
+    configure.arg("--disable-doc");
+
     // the binary using ffmpeg-sys must comply with GPL
     configure.switch("BUILD_LICENSE_GPL", "gpl");
 
