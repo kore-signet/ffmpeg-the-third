@@ -10,7 +10,7 @@ pub struct Rational(pub i32, pub i32);
 
 impl Rational {
     #[inline]
-    pub fn new(numerator: i32, denominator: i32) -> Self {
+    pub const fn new(numerator: i32, denominator: i32) -> Self {
         Rational(numerator, denominator)
     }
 
